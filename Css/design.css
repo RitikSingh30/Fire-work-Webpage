@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+
+*{
+    margin: 0 ;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* ------------------------------------------------------------------------- */
+/* Navigation bar */
+/* ------------------------------------------------------------------------- */
+
+.navbar{
+    display: flex;
+    height: 50px;
+    position: sticky;
+    top: 0;
+    filter: drop-shadow(10px 17px 15px rgb(0, 0, 0));
+}
+
+/* left part of navigation bar  */
+.leftnav{
+    display: flex;
+    width: 30%;
+}
+
+.logo{
+    width: 15%;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.middlenav{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.menu{
+    display: flex;
+    padding: 9px;
+}
+
+.menu li{
+    list-style: none; 
+}
+
+.menu li a{
+    color: white;
+    padding: 0 39px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu li a:hover{
+    color: rgb(0, 0, 0);
+    background-color: white;
+    padding-bottom: 20px;
+    border-radius: 7px;
+
+}
+
+/* right part of the navigation bar  */
+.rightnav{
+    width: 30%;
+}
+
+.search{
+    display: flex;
+    margin: 12rem;
+    width: 0%;
+    margin-top: 13px;
+}
+
+.search input{
+    text-align: center;
+    border-radius: 5px;
+    height: 20px;
+}
+
+/* ------------------------------------------------------------------------- */
+/* Main page */
+/* ------------------------------------------------------------------------- */
+
+.mainpage{
+    display: flex;
+    margin-bottom: 3rem;
+}
+
+/* main left  */
+.mainleft{
+    width: 50%;
+    margin-top: 10rem;
+}
+
+.info{
+    padding: 38px;
+    text-align: center;
+}
+
+.info h2{
+    margin-bottom: 20px;
+    font-size: 70px;
+    font-family: 'Lora', serif;
+    font-variant: small-caps ;
+    cursor: pointer;
+    
+}
+
+.info h2::before{
+    color: rgb(255, 0, 0);
+    content: "A";
+    margin-right: -17px;
+}
+
+.info p{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    cursor: pointer;
+}
+
+/* main right  */
+.mainright{
+    height: 31rem;
+    width: 50%;
+    padding-top: 4rem;
+    padding-left: 5rem;
+    /* opacity: 0.8;    */
+}
+
+.mainright img{
+    height: 30rem;
+    width: 40rem;
+    /* difference between box shadow and drop shadow is
+    jab hum box shadow use karte hai to wo hume ek box bana ke usko shadow de deta hai but jab hai drop shadow use karte hai
+    to wo humare content ke edges ko shadow de deta hai wo hume box bana ke nahi deta for more detail check google */
+    /* filter: drop-shadow(13px 13px 13px gray); */
+    box-shadow: gray 13px 13px 13px;
+}
+
+.main-Img-button{
+    display: flex;
+    margin: 1rem;
+    justify-content: center;
+}
+
+.main-btn{
+    background: transparent;
+    margin: 0 1rem;
+    height: 2em;
+    width: 4em;
+    font-size: 20px;
+}
+
+/* ------------------------------------------------------------------------- */
+/* Introduction */
+/* ------------------------------------------------------------------------- */
+.introduction{
+    padding-top: 4rem;
+    background-color: aliceblue;
+    height: 18rem;
+}
+
+/* Introduction heading  */
+.intro-heading h2{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.intro-heading h2::after{
+    content: "Abhay Fabrication";
+    color: rgb(230, 0, 0);
+}
+
+/* Bussiness information  */
+.bussiness-info{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas: 
+    'overview overview design design'
+    'analytics analytics result result'
+    ;
+    width: 50%;
+    margin: auto;
+    height: 11rem;
+    padding-top: 38px;
+    
+}
+
+#overview{
+    grid-area: overview;
+}
+
+.buss-img{
+    width: 20%;
+}
+
+.buss-img img{
+    width: 100%;
+}
+
+#design{
+    grid-area: design;
+}
+
+#analytics{
+    grid-area: analytics;
+    padding-top: 22px;
+}
+
+#result{
+    grid-area: result;
+    padding-top: 22px;
+
+}
+
+.content{
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.content p{
+    margin-top: 10px;
+}
+
+/* ------------------------------------------------------------------------- */
+/* Our Work */
+/* ------------------------------------------------------------------------- */
+.our-work{
+    padding-top: 20px;
+    background-color: rgb(241 255 242);
+}
+
+.work-div{
+    width: 80%;
+    margin: auto;
+}
+
+.work-heading h3{
+    font-size: 27px;
+    margin-bottom: 16px;
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
+
+.work-heading p{
+    font-size: 21px;
+    text-align: center;
+}
+
+.img-1 p{
+    margin: 80px 32px;
+}
+
+.img-1 img{
+    margin-top: 28px;
+    width: 25rem;
+    box-shadow: gray 13px 13px 13px;
+}
+
+.img-2 img{
+    margin-top: 28px;
+    width: 25rem;
+    box-shadow: gray 13px 13px 13px;
+}
+
+.img-2 p{
+    margin: 80px 32px;
+}
+
+.img-3 img{
+    margin-top: 28px;
+    width: 25rem;
+    box-shadow: gray 13px 13px 13px;
+}
+
+.img-3 p{
+    margin: 80px 32px;
+}
+
+/* ------------------------------------------------------------------------- */
+/* Form */
+/* ------------------------------------------------------------------------- */
+.form{
+    width: 80%;
+    margin: auto;
+    padding-top: 22px;
+}
+
+.form h2{
+    font-size: 2rem;
+}
+
+.form-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.contact{
+    background-color: #f0efef;
+    height: 32rem;
+}
+
+.inp{
+    margin: 10px 10px;
+    width: 70%;
+}
+
+.inp-width{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+
+/* ------------------------------------------------------------------------- */
+/* Footer */
+/* ------------------------------------------------------------------------- */
+footer{
+    padding: 10px 10px;
+    background-color: black;
+    color: white;
+}
+
+
+/* ------------------------------------------------------------------------- */
+/* Utility Classes */
+/* ------------------------------------------------------------------------- */
+
+.background{
+    background: rgb(134 83 83 / 70%) url("../Images/Background.webp");
+    background-size: cover;
+    background-blend-mode:hard-light;
+}
+
+.btn{
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 0 4px;
+    height: 20px;
+    margin-top: 2px;
+    padding: 1px 5px;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: rgb(190, 190, 190);
+}
+
+.center{
+    text-align: center;
+}
+
+.default-color{
+    background-color: yellow;
+}
+
+.display-flex{
+    display: flex;
+}
+
+.small-img{
+    width:71px;
+}
+
+.big-img{
+    width: 97px;
+}
+
+.para-font{
+    font-family: 'Lora', serif;
+}
+
+.btn-big{
+    width: 88px;
+    font-size: 19px;
+    height: 33px;
+    background-color: green;
+    color: white;
+}
